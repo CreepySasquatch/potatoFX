@@ -8,6 +8,7 @@
 #include "ReShadeUI.fxh"
 #include "Oklab.fxh"
 
+
 static const float PI = pUtils::PI;
 static const float EPSILON = pUtils::EPSILON;
 static const float INVNORM_FACTOR = Oklab::INVNORM_FACTOR;
