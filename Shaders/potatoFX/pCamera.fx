@@ -135,7 +135,7 @@ uniform float GeoIStrength < __UNIFORM_SLIDER_FLOAT1
 	ui_label = "Glass quality";
 	ui_tooltip = "Amount of surface lens imperfections";
 	ui_category = "Lens Imperfections";
-> = 0.25;
+> = 0.0;
 
 //Chromatic aberration
 uniform float CAStrength < __UNIFORM_SLIDER_FLOAT1
@@ -143,7 +143,7 @@ uniform float CAStrength < __UNIFORM_SLIDER_FLOAT1
 	ui_label = "CA amount";
 	ui_tooltip = "Amount of chromatic aberration";
 	ui_category = "Lens Imperfections";
-> = 0.04;
+> = 0.0;
 
 //Dirt
 uniform float DirtStrength < __UNIFORM_SLIDER_FLOAT1
@@ -151,13 +151,13 @@ uniform float DirtStrength < __UNIFORM_SLIDER_FLOAT1
 	ui_label = "Dirt amount";
 	ui_tooltip = "Amount of dirt on the lens";
 	ui_category = "Lens Imperfections";
-> = 0.08;
+> = 0.00;
 uniform float DirtScale < __UNIFORM_SLIDER_FLOAT1
 	ui_min = 0.5; ui_max = 2.5;
 	ui_label = "Dirt scale";
 	ui_tooltip = "Scaling of dirt texture";
 	ui_category = "Lens Imperfections";
-> = 1.35;
+> = 0.5;
 
 //Bloom
 uniform float BloomStrength < __UNIFORM_SLIDER_FLOAT1
@@ -165,7 +165,7 @@ uniform float BloomStrength < __UNIFORM_SLIDER_FLOAT1
 	ui_label = "Bloom amount";
 	ui_tooltip = "Amount of blooming to apply";
 	ui_category = "Bloom";
-> = 0.28;
+> = 0.0;
 uniform float BloomShape < __UNIFORM_SLIDER_FLOAT1
 	ui_min = 0.0; ui_max = 1.0;
 	ui_label = "Bloom shape";
@@ -204,7 +204,7 @@ uniform bool UseLF <
 	ui_label = "Lens flare";
 	ui_tooltip = "Apply ghosting, haloing and glare from light sources";
 	ui_category = "Lens Flare";
-> = true;
+> = false;
 uniform bool GLocalMask <
 	ui_type = "bool";
 	ui_label = "Non-intrusive lens flares";
@@ -415,7 +415,7 @@ uniform float NoiseStrength < __UNIFORM_SLIDER_FLOAT1
 	ui_label = "Noise amount";
 	ui_tooltip = "Amount of noise to apply";
 	ui_category = "Noise";
-> = 0.08;
+> = 0.0;
 uniform int NoiseType < __UNIFORM_RADIO_INT1
 	ui_label = "Noise type";
 	ui_tooltip = "Type of noise to use";

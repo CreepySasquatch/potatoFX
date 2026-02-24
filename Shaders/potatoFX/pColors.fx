@@ -198,7 +198,7 @@ uniform float3 ShadowTintColor < __UNIFORM_COLOR_FLOAT3
 	ui_label = "Tint";
 	ui_tooltip = "Color to which shadows are tinted";
 	ui_category = "Shadows";
-> = float3(0.69, 0.82, 1.0);
+> = float3(1.0, 1.0, 1.0);
 uniform float ShadowSaturation < __UNIFORM_SLIDER_FLOAT1
 	ui_min = -1.0; ui_max = 1.0;
 	ui_label = "Saturation";
@@ -246,7 +246,7 @@ uniform float3 HighlightTintColor < __UNIFORM_COLOR_FLOAT3
 	ui_label = "Tint";
 	ui_tooltip = "Color to which highlights are tinted";
 	ui_category = "Highlights";
-> = float3(1.0, 0.98, 0.90);
+> = float3(1.0, 1.0, 1.0);
 uniform float HighlightSaturation < __UNIFORM_SLIDER_FLOAT1
 	ui_min = -1.0; ui_max = 1.0;
 	ui_label = "Saturation";
